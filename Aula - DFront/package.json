@@ -1,0 +1,19 @@
+{
+  "name": "aula---dfront",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isadorq/Aula---DFront.git#master"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Isadorq/Aula---DFront/issues"
+  },
+  "homepage": "https://github.com/Isadorq/Aula---DFront/tree/master#readme",
+  "description": ""
+}
