@@ -1,22 +1,25 @@
 <template>
   <div>
+    <!-- <ExercicioUm/> -->
     <!-- <ExercicioDois /> -->
     <ExercicioTres />
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <!-- <ExercicioQuatro/> -->
   </div>
 </template>
 
 <script>
-// import ExercicioDois from './components/ExercicioDois.vue'
+// import ExercicioUm from './components/ExercicioUm.vue';
+// import ExercicioDois from './components/ExercicioUm.vue';
 import ExercicioTres from './components/ExercicioTres.vue'
-// import HelloWorld from './components/HelloWorld.vue'
+// import ExercicioQuatro from './components/ExercicioQuatro.vue';
 
 export default {
   name: 'App',
   components: {
+    // ExercicioUm,
     // ExercicioDois, 
-    ExercicioTres  
-    // HelloWorld // Adicione se for usar
+    ExercicioTres
+    // ExercicioQuatro,  
   }
 }
 </script>

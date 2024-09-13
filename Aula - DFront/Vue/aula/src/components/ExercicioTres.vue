@@ -1,34 +1,38 @@
 <template>
-    <div class="contador">
-      <p>Contador: {{ count }}</p>
-      <button @click="incrementar">Incrementar</button>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'ContadorComponente',
-    data() {
-      return {
-        count: 0
-      };
-    },
-    methods: {
-      incrementar() {
-        this.count++;
-      }
-    }
-  };
-  </script>
+  <div class="toggle-text">
+    <button @click="toggleTexto">{{ mostrarTexto ? 'Ocultar' : 'Mostrar' }} Texto</button>
+    <p v-if="mostrarTexto">Este é o texto que pode ser mostrado ou ocultado.</p>
+  </div>
+</template>
 
-  <style scoped>
-  .contador {
-    text-align: center;
+<script>
+export default {
+  name: 'ToggleTexto',
+  data() {
+    return {
+      mostrarTexto: false
+    };
+  },
+  methods: {
+    toggleTexto() {
+      this.mostrarTexto = !this.mostrarTexto;
+    }
   }
-  button {
-    font-size: 18px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin: 5px;
-  }
-  </style>
+};
+</script>
+
+<style scoped>
+.toggle-text {
+  text-align: center;
+  margin-top: 20px;
+}
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+p {
+  font-size: 18px;
+  color: #333;
+}
+</style>

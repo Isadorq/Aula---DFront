@@ -1,20 +1,35 @@
 <template>
-   <div class="hello">
-    <p><b>Bem-vindo ao Vue.js! 😁💻</b></p>
-   </div>
-  </template>
-  <script>
-  export default {
-    name: 'ExercicoDois',
+  <div class="contador">
+    <p>Contador: {{ count }}</p>
+    <button @click="incrementar">Incrementar</button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'ContadorComponente',
+  data() {
+    return {
+      count: 0
+    };
+  },
+  methods: {
+    incrementar() {
+      this.count++;
+    }
   }
-  </script>
+};
+</script>
 
 <style scoped>
-  .hello{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: larger;
-    display: contents;
-  }
-  
+.contador {
+  text-align: center;
+  font-family: monospace;
+}
+button {
+  font-family: monospace;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+}
 </style>
-  
